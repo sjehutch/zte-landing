@@ -42,7 +42,7 @@ li{
   position: absolute;
 }
 
-.more button {
+.more button, .more a {
   border-radius: 20px;
   background: transparent;
   color: #5f6971;
@@ -50,9 +50,28 @@ li{
   font-size: 17px;
   padding: 10px;
   font-family: 'Open Sans', sans-serif;
+
 }
-.more button:hover{
+.font-black {
+  color: ;
+}
+.more .btn-primary{
   background: transparent;
+  color: inherit;
+}
+.more button:focus {
+  outline: none !important;
+}
+.more button:hover, .more a:hover{
+  background: #009cff;
+  border-color: #009cff !important;
+  color: #fff;
+  text-decoration: none;
+}
+.more button:visited, .more a:visited{
+   background: transparent;
+  color: #5f6971;
+  border: 1px #5f6971 solid;
 }
 .grayscale-filter{
   -webkit-filter: grayscale(100%);
@@ -118,7 +137,6 @@ header .buynow{
 section.home {
   height: 700px;
   position: relative;
-  z-index: -1;
   background-color: #e3e3e3;
   background: url("../images/clone/background.png") no-repeat;
   background-size: 100% 100%;
@@ -146,11 +164,19 @@ section.home {
 .content-container .description img{
   width: 460px;
 }
-.content-container .more button {
+.content-container .more button, .content-container .more a {
 
-
+  background: transparent;
+  color: #5f6971;
+  border: 1px #5f6971 solid;
  margin-left: 130px;
  margin-top: 0;
+}
+.content-container .more a:hover{
+    background: #009cff;
+  border-color: #009cff !important;
+  color: #fff;
+  text-decoration: none;
 }
 section.clients {
   min-height: 70px;
@@ -416,6 +442,25 @@ section.scenic .scenic-container .para{
   text-align: left;
   font-size: 14px;
 }
+section.scenic .scenic-container .more button{
+  background-color: transparent;
+  color: #fff !important;
+  border-color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+  width: 162px;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+section.scenic .scenic-container .more button:hover{
+    background: #009cff;
+  border-color: #009cff !important;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 section.partners {
   height: 700px;
   position: relative;

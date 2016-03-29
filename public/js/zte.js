@@ -21,6 +21,7 @@ function Ignite(){
       })
 
 
+
   }
 
   $(document).ready(onDocumentReady)
@@ -28,3 +29,14 @@ function Ignite(){
 }
 
 (Ignite)()
+
+function scrollToNextPage(){
+
+  var pageHeight = $(window).height();
+  var navbarHeight = $("#nav-on-scroll").height();
+  $('html, body').animate({
+    scrollTop: pageHeight - navbarHeight
+  }, 800);
+    
+
+}
