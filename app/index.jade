@@ -6,12 +6,27 @@ html
   body
     header.fixed
       nav
-        .navbar#nav-on-scroll
+        .navbar.navbar-default.navbar-on-scroll#nav-on-scroll(role="navigation")
           .container-fluid
-            .navbar-header
-            .navbar-logo
-              a.navbar-brand(href="javascript:void(0)")
-                .logo
+            .navbar-header(style="position:relative")
+              button.colapse-menu.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+
+              .navbar-logo
+                a.navbar-brand(href="javascript:void(0)")
+                  .logo
+              .responsive-nav
+                ul.center-vertical
+                  li
+                    a(href="javascript:void(0)")
+                      span.fa.fa-search
+                  li
+                    a(href="javascript:void(0)")
+                      span.fa.fa-shopping-cart
+            .collapse.navbar-collapse#navbar
               ul.nav.navbar-nav.navbar-right
                 li
                   a(href="#") AXON
@@ -23,22 +38,29 @@ html
                   a(href="#") SUPPORT
                 li
                   a(href="#") ABOUT US
-                li
+                li.normal-search
                   a.search(href="javascript:void(0)")
                     span.fa.fa-search
-                li
+                li.normal-buy
                   button.btn.btn-primary.buynow Buy Now
+
 
     section.home
       div.center-horizontal.content-container
           .product
             img(src="./images/clone/screen-one-product.png")
-          .description
+          .description#description
             img(src="./images/clone/screen-one-des_1.png")
             .more
               a(href="javascript:scrollToNextPage()").btn.btn-primary Discover More	
 
-      
+    section.home-responsive
+      .inner-frame
+        div.description-responsive.center
+          img(src="./images/clone/screen-one-des_1.png")
+          .more.center-horizontal 
+            a(href="javascript:scrollToNextPage()").btn.btn-primary Discover More 
+
     section.intro-video
       div.video-container
         video.center(poster="./images/clone/video-background.png", src="")
@@ -76,9 +98,34 @@ html
             button.btn.btn-primary Learn More
       .coke-content
         img(src="./images/clone/screen-four-coke.png")
+    
+    section.description-responsive-image
+      .description-bg
+      .description-container
+        .image-content
+          img(src="./images/clone/screen-four-product.png")
+    section.description-responsive-content
+      .text-content.center
+        p.title
+          span WE DO WHAT TABLETS DO. 
+          br
+          span AND WHAT OTHER TABLETS DON'T.
+        p.content
+          |It provides access to apps just like a smart phone or tablet. But it also projects brilliantly up to 10 ft. with 200 lumens of brilliance. It’s unlike anything you've ever touched or seen before. It fits in your hand but weighs a mere pound and a half of feathers. We call it the Spro2 Smart Projector.
+        .more
+          button.btn.btn-primary Learn More
+
     section.pitch
       .pitch-bg
       .pitch-container
+        .text-content
+           p.title Executive Office. Suite
+           p.title or Elevator Pitch. Perfect
+          p.para Your Big Idea just got bigger. And brighter. Now you can project an office doc, business presentation, or any Android app in 720p HD clarity. Access content via HDMI or USB ports, microSD slot or even in the cloud, and show sales projections to the C-Suite or pitch your start up idea to a busy investor riding the executive elevator.
+        .more
+          button.btn.btn-primary Learn More
+    section.pitch-responsive
+      .pitch-container.center
         .text-content
            p.title Executive Office. Suite
            p.title or Elevator Pitch. Perfect
@@ -93,6 +140,14 @@ html
           p.para From the indoors to the outdoors, take a good look. Anywhere. With the Spro2 you can focus on what matters most. (Actually, there’s no need to focus. Our auto focus does the job for you.) And the built in rechargeable lithium ion battery will last for hours. So take a good long, long, long look.
         .more
           button.btn.btn-primary Learn More
+
+    section.scenic-responsive-content
+      .scenic-container
+        .text-content.center
+          p.title No Walls. Look
+          p.para From the indoors to the outdoors, take a good look. Anywhere. With the Spro2 you can focus on what matters most. (Actually, there’s no need to focus. Our auto focus does the job for you.) And the built in rechargeable lithium ion battery will last for hours. So take a good long, long, long look.
+          .more
+            button.btn.btn-primary Learn More
         
     section.partners
       .partners-bg
@@ -104,6 +159,14 @@ html
           .more
             button.btn.btn-primary Learn More
       
+    section.partners-responsive
+      .partners-container
+        .text-content.center
+          p.title Five inch screen or
+          p.title Ten foot wall.
+          p.para It’s a game player and a game changer that goes from small screen LCD brilliant to large screen HD epic. Whatever you see on that 5 inch touch screen immediately projects up to 120 inches with the touch of a single button. Making any surface a 10ft screen. Safe to say no other product can touch the Spro2 with a ten foot pole.
+          .more
+            button.btn.btn-primary Learn More
       
     section.apps-list
       .apps-list-bg
@@ -136,6 +199,8 @@ html
               li
                 a(href="javascript:void(0)")
                   .circle
+
+
     section.product
       .product-container
         .left-nav
@@ -168,10 +233,54 @@ html
           .arrow.center-vertical
             a(href="javascript:void(0)")
               i.fa.fa-angle-right
+
+    section.product-responsive
+      .product-container
+        .left-nav
+          .arrow.center-vertical
+            a(href="javascript:void(0)")
+              i.fa.fa-angle-left
+            
+        .product-list.center
+          ul
+            li
+              img(src="./images/clone/product-preview-two.png")
+            li
+              img(src="./images/clone/product-preview-three.png")
+            
+              
+        .bottom-nav.center-horizontal
+          ul
+            li
+              a(href="javascrit:void(0)")
+                .circle-nav.selected
+                  .circle-inner.ash
+            li
+              a(href="javascrit:void(0)")
+                .circle-nav
+                  .circle-inner.blue
+          
+        .right-nav
+          .arrow.center-vertical
+            a(href="javascript:void(0)")
+              i.fa.fa-angle-right
+
     section.purchase
       .purchase-container.center
         .image-content
           img(src="./images/clone/purchase_screen.png")
+        .text-content
+          p You've just seen the future.
+          h2 Now you can own it!
+          .more
+            button.btn.btn-primary Buy Now
+
+    section.purchase-responsive-image
+      .purchase-container
+        .image-content.center
+          img(src="./images/clone/purchase_screen.png")
+    section.purchase-responsive-content
+      .purchase-container.center
         .text-content
           p You've just seen the future.
           h2 Now you can own it!
@@ -187,11 +296,10 @@ html
             input.form-control(type="text", placeholder="Input Your Email")
             button.btn.btn-primary.pull-left Subscribe
     
-              
     footer
       .footer-container
-        div
-          .col-md-3
+        div.row-fluid.center.foot-hold
+          .col-md-3.col-sm-3
             .content-container
               p.copyright © 2016  ZTE Corporation and
                 |ZTE USA. All Rights Reserved
@@ -215,7 +323,7 @@ html
                 .circle
                   span.fa.fa-instagram
           
-          .col-md-3.border
+          .col-md-3.border.col-sm-3
             h5 PRODUCTS
             ul
               li 
@@ -232,7 +340,7 @@ html
                 a(href="javascript:void(0)") Tablets
               li 
                 a(href="javascript:void(0)") M2M/IoT
-          .col-md-3.border
+          .col-md-3.border.col-sm-3
             h5 FIND HELP
             ul
               li 
@@ -249,7 +357,7 @@ html
                 a(href="javascript:void(0)") Warranties
               li 
                 a(href="javascript:void(0)") Track Your Orders
-          .col-md-3.border
+          .col-md-3.border.col-sm-3
             h5 ABOUT ZTE
             ul
               li 
@@ -268,4 +376,5 @@ html
                 a(href="javascript:void(0)") ZTE Enterprise Global
 
     script(src="./lib/jquery/dist/jquery.js")
+    script(src="./lib/bootstrap/dist/js/bootstrap.js")
     script(src="./js/zte.js")

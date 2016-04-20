@@ -8,19 +8,28 @@
   <body>
     <header class="fixed">
       <nav>
-        <div id="nav-on-scroll" class="navbar">
+        <div id="nav-on-scroll" role="navigation" class="navbar navbar-default navbar-on-scroll">
           <div class="container-fluid">
-            <div class="navbar-header"></div>
-            <div class="navbar-logo"><a href="javascript:void(0)" class="navbar-brand">
-                <div class="logo"></div></a>
+            <div style="position:relative" class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="colapse-menu navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              <div class="navbar-logo"><a href="javascript:void(0)" class="navbar-brand">
+                  <div class="logo"></div></a></div>
+              <div class="responsive-nav">
+                <ul class="center-vertical">
+                  <li><a href="javascript:void(0)"><span class="fa fa-search"></span></a></li>
+                  <li><a href="javascript:void(0)"><span class="fa fa-shopping-cart"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">AXON</a></li>
                 <li><a href="#">SPRO</a></li>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">SUPPORT</a></li>
                 <li><a href="#">ABOUT US</a></li>
-                <li><a href="javascript:void(0)" class="search"><span class="fa fa-search"></span></a></li>
-                <li>
+                <li class="normal-search"><a href="javascript:void(0)" class="search"><span class="fa fa-search"></span></a></li>
+                <li class="normal-buy">
                   <button class="btn btn-primary buynow">Buy Now</button>
                 </li>
               </ul>
@@ -32,8 +41,15 @@
     <section class="home">
       <div class="center-horizontal content-container">
         <div class="product"><img src="./images/clone/screen-one-product.png"/></div>
-        <div class="description"><img src="./images/clone/screen-one-des_1.png"/>
+        <div id="description" class="description"><img src="./images/clone/screen-one-des_1.png"/>
           <div class="more"><a href="javascript:scrollToNextPage()" class="btn btn-primary">Discover More	</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="home-responsive">
+      <div class="inner-frame">
+        <div class="description-responsive center"><img src="./images/clone/screen-one-des_1.png"/>
+          <div class="more center-horizontal"> <a href="javascript:scrollToNextPage()" class="btn btn-primary">Discover More </a></div>
         </div>
       </div>
     </section>
@@ -76,9 +92,36 @@
       </div>
       <div class="coke-content"><img src="./images/clone/screen-four-coke.png"/></div>
     </section>
+    <section class="description-responsive-image">
+      <div class="description-bg"></div>
+      <div class="description-container">
+        <div class="image-content"><img src="./images/clone/screen-four-product.png"/></div>
+      </div>
+    </section>
+    <section class="description-responsive-content">
+      <div class="text-content center">
+        <p class="title"><span>WE DO WHAT TABLETS DO. </span><br/><span>AND WHAT OTHER TABLETS DON'T.</span></p>
+        <p class="content">It provides access to apps just like a smart phone or tablet. But it also projects brilliantly up to 10 ft. with 200 lumens of brilliance. It’s unlike anything you've ever touched or seen before. It fits in your hand but weighs a mere pound and a half of feathers. We call it the Spro2 Smart Projector.</p>
+        <div class="more">
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+    </section>
     <section class="pitch">
       <div class="pitch-bg"></div>
       <div class="pitch-container">
+        <div class="text-content">
+          <p class="title">Executive Office. Suite</p>
+          <p class="title">or Elevator Pitch. Perfect</p>
+        </div>
+        <p class="para">Your Big Idea just got bigger. And brighter. Now you can project an office doc, business presentation, or any Android app in 720p HD clarity. Access content via HDMI or USB ports, microSD slot or even in the cloud, and show sales projections to the C-Suite or pitch your start up idea to a busy investor riding the executive elevator.</p>
+        <div class="more">
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <section class="pitch-responsive">
+      <div class="pitch-container center">
         <div class="text-content">
           <p class="title">Executive Office. Suite</p>
           <p class="title">or Elevator Pitch. Perfect</p>
@@ -101,10 +144,33 @@
         </div>
       </div>
     </section>
+    <section class="scenic-responsive-content">
+      <div class="scenic-container">
+        <div class="text-content center">
+          <p class="title">No Walls. Look</p>
+          <p class="para">From the indoors to the outdoors, take a good look. Anywhere. With the Spro2 you can focus on what matters most. (Actually, there’s no need to focus. Our auto focus does the job for you.) And the built in rechargeable lithium ion battery will last for hours. So take a good long, long, long look.</p>
+          <div class="more">
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="partners">
       <div class="partners-bg"></div>
       <div class="partners-container">
         <div class="text-content">
+          <p class="title">Five inch screen or</p>
+          <p class="title">Ten foot wall.</p>
+          <p class="para">It’s a game player and a game changer that goes from small screen LCD brilliant to large screen HD epic. Whatever you see on that 5 inch touch screen immediately projects up to 120 inches with the touch of a single button. Making any surface a 10ft screen. Safe to say no other product can touch the Spro2 with a ten foot pole.</p>
+          <div class="more">
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners-responsive">
+      <div class="partners-container">
+        <div class="text-content center">
           <p class="title">Five inch screen or</p>
           <p class="title">Ten foot wall.</p>
           <p class="para">It’s a game player and a game changer that goes from small screen LCD brilliant to large screen HD epic. Whatever you see on that 5 inch touch screen immediately projects up to 120 inches with the touch of a single button. Making any surface a 10ft screen. Safe to say no other product can touch the Spro2 with a ten foot pole.</p>
@@ -176,9 +242,53 @@
         </div>
       </div>
     </section>
+    <section class="product-responsive">
+      <div class="product-container">
+        <div class="left-nav">
+          <div class="arrow center-vertical"><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></div>
+        </div>
+        <div class="product-list center">
+          <ul>
+            <li><img src="./images/clone/product-preview-two.png"/></li>
+            <li><img src="./images/clone/product-preview-three.png"/></li>
+          </ul>
+        </div>
+        <div class="bottom-nav center-horizontal">
+          <ul>
+            <li><a href="javascrit:void(0)">
+                <div class="circle-nav selected">
+                  <div class="circle-inner ash"></div>
+                </div></a></li>
+            <li><a href="javascrit:void(0)">
+                <div class="circle-nav">
+                  <div class="circle-inner blue"></div>
+                </div></a></li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <div class="arrow center-vertical"><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></div>
+        </div>
+      </div>
+    </section>
     <section class="purchase">
       <div class="purchase-container center">
         <div class="image-content"><img src="./images/clone/purchase_screen.png"/></div>
+        <div class="text-content">
+          <p>You've just seen the future.</p>
+          <h2>Now you can own it!</h2>
+          <div class="more">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="purchase-responsive-image">
+      <div class="purchase-container">
+        <div class="image-content center"><img src="./images/clone/purchase_screen.png"/></div>
+      </div>
+    </section>
+    <section class="purchase-responsive-content">
+      <div class="purchase-container center">
         <div class="text-content">
           <p>You've just seen the future.</p>
           <h2>Now you can own it!</h2>
@@ -202,8 +312,8 @@
     </section>
     <footer>
       <div class="footer-container">
-        <div>
-          <div class="col-md-3">
+        <div class="row-fluid center foot-hold">
+          <div class="col-md-3 col-sm-3">
             <div class="content-container">
               <p class="copyright">
                 © 2016  ZTE Corporation and
@@ -222,7 +332,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 border">
+          <div class="col-md-3 border col-sm-3">
             <h5>PRODUCTS</h5>
             <ul>
               <li> <a href="javascript:void(0)">Smartphone</a></li>
@@ -234,7 +344,7 @@
               <li> <a href="javascript:void(0)">M2M/IoT</a></li>
             </ul>
           </div>
-          <div class="col-md-3 border">
+          <div class="col-md-3 border col-sm-3">
             <h5>FIND HELP</h5>
             <ul>
               <li> <a href="javascript:void(0)">Find Product Support</a></li>
@@ -246,7 +356,7 @@
               <li> <a href="javascript:void(0)">Track Your Orders</a></li>
             </ul>
           </div>
-          <div class="col-md-3 border">
+          <div class="col-md-3 border col-sm-3">
             <h5>ABOUT ZTE</h5>
             <ul>
               <li> <a href="javascript:void(0)">About Us</a></li>
@@ -262,6 +372,7 @@
       </div>
     </footer>
     <script src="./lib/jquery/dist/jquery.js"></script>
+    <script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./js/zte.js"></script>
   </body>
 </html>
