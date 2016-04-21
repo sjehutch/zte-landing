@@ -50,7 +50,7 @@ and (max-device-width: 768px){
   .pitch .pitch-container,
   .scenic .scenic-container, section.product, section.purchase,
   .normal-search,
-  .normal-buy, .partners-container .text-content{
+  .normal-buy, .partners-container .text-content, .view .normal{
 
     display: none !important; 
 
@@ -67,6 +67,7 @@ and (max-device-width: 768px){
   .responsive-nav,
   .scenic-responsive-content,
   .partners-responsive
+  .view .text-responsive
   {
 
     display: block !important;
@@ -93,14 +94,14 @@ and (max-device-width: 768px){
 
   .description-responsive-image{
 
-    min-height: 1016px;
+    height: 1016px;
     position: relative;
   }
 
   .description-responsive-image{
 
     width: 100%;
-    height: 100%;
+    
     background-color: #fef;
     transform: skewY(-3.5deg);
     margin-top: -35px;
@@ -551,6 +552,22 @@ section.product-responsive .right-nav {
     padding: 5px;
 
 
+  }
+
+  .view .text-responsive li{
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  section.view {
+
+    height: 800px;
+
+  }
+ section.view .view-content-container{
+   height: 100%;
+   padding-top: 30px;
   }
 
 
