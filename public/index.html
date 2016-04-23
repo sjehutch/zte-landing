@@ -16,7 +16,7 @@
             <div style="position:relative" class="navbar-header">
               <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="colapse-menu navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
               <div class="navbar-logo"><a href="javascript:void(0)" class="navbar-brand">
-                  <div class="logo"></div></a></div>
+                  <div class="logo center-vertical"></div></a></div>
               <div class="responsive-nav">
                 <ul class="center-vertical">
                   <li><a href="javascript:void(0)"><span class="fa fa-search"></span></a></li>
@@ -52,11 +52,30 @@
           </div>
         </section>
         <section class="home-responsive">
-          <div class="inner-frame">
-            <div class="description-responsive center"><img src="./images/clone/screen-one-des_1.png"/>
-              <div class="more center-horizontal"> <a href="javascript:scrollToNextPage()" class="btn btn-primary">Discover More </a></div>
+          <section class="image-frame">
+            <div class="image-container">
+              <div class="image-place center-horizontal">
+                <div class="product"><img src="./images/clone/screen-one-product.png" class="tablet"/></div>
+              </div>
             </div>
-          </div>
+          </section>
+          <section class="content-frame">
+            <div class="content-description">
+              <div id="description" class="description center"><img src="./images/clone/screen-one-des_1.png" class="tablet"/>
+                <div class="more center-horizontal"><a href="javascript:scrollToNextPage()" class="btn btn-primary">Discover More </a></div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="home-responsive-mobile">
+          <section class="image-frame"></section>
+          <section class="content-frame">
+            <div class="content-description">
+              <div id="description" class="description center"><img src="./images/clone/screen-one-des_1_mobile.png" class="tablet"/>
+                <div class="more center-horizontal"><a href="javascript:scrollToNextPage()" class="btn btn-primary">Discover More </a></div>
+              </div>
+            </div>
+          </section>
         </section>
         <section class="intro-video">
           <div class="video-container">
@@ -70,6 +89,18 @@
             </div>
           </div>
         </section>
+        <section class="intro-video-responsive">
+          <section class="video-container">
+            <video poster="./images/clone/Tablet/Landing_video_tablet.jpg" src="" class="center"></video>
+            <div class="overlay">
+              <div class="play center"><a href="javascript:void(0)"><span class="fa fa-play-circle-o"></span></a>
+                <div class="watch-text">
+                  <p>Watch video</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
         <section class="view">
           <div class="view-content-container center-horizontal">
             <div class="text-content">
@@ -79,14 +110,44 @@
               </p>
               <h3>JACKHAMMER...</h3>
               <p class="normal">Projector. Tablet. Hotspot. BAM!</p>
-              <ul class="text-responsive">
-                <li>PROJECTOR.</li>
+            </div>
+            <div class="image-content"><img src="./images/clone/screen-three-product.png"/></div>
+          </div>
+        </section>
+        <section class="view-responsive">
+          <div class="view-content-container center-horizontal">
+            <div class="text-content">
+              <p>
+                If you honestly think the tablet was ground
+                breaking, may we introduce you to a
+              </p>
+              <h3>JACKHAMMER...</h3>
+              <ul class="features">
+                <li>PROJECTOR. </li>
                 <li>TABLET.</li>
                 <li>HOTSPOT.</li>
                 <li>BAM!</li>
               </ul>
             </div>
             <div class="image-content"><img src="./images/clone/screen-three-product.png"/></div>
+          </div>
+        </section>
+        <section class="view-responsive-mobile">
+          <div class="view-content-container center-horizontal">
+            <div class="text-content">
+              <p>
+                If you honestly think the tablet was ground
+                breaking, may we introduce you to a
+              </p>
+              <h3>JACKHAMMER...</h3>
+              <ul class="features">
+                <li>PROJECTOR. </li>
+                <li>TABLET.</li>
+                <li>HOTSPOT.</li>
+                <li>BAM!</li>
+              </ul>
+            </div>
+            <div class="image-content"><img src="./images/clone/screen-three-product_mobile.png"/></div>
           </div>
         </section>
         <section class="description">
@@ -103,20 +164,37 @@
           </div>
           <div class="coke-content"><img src="./images/clone/screen-four-coke.png"/></div>
         </section>
-        <section class="description-responsive-image">
-          <div class="description-bg"></div>
-          <div class="description-container">
-            <div class="image-content"><img src="./images/clone/screen-four-product.png"/></div>
-          </div>
-        </section>
-        <section class="description-responsive-content">
-          <div class="text-content center">
-            <p class="title"><span>WE DO WHAT TABLETS DO. </span><br/><span>AND WHAT OTHER TABLETS DON'T.</span></p>
-            <p class="content">It provides access to apps just like a smart phone or tablet. But it also projects brilliantly up to 10 ft. with 200 lumens of brilliance. It’s unlike anything you've ever touched or seen before. It fits in your hand but weighs a mere pound and a half of feathers. We call it the Spro2 Smart Projector.</p>
-            <div class="more">
-              <button class="btn btn-primary">Learn More</button>
+        <section class="description-responsive">
+          <section class="description-image">
+            <div class="description-container">
+              <div class="image-content center"><img src="./images/clone/screen-four-product.png"/></div>
             </div>
-          </div>
+          </section>
+          <section class="description-content">
+            <div class="text-content center">
+              <p class="title"><span>WE DO WHAT TABLETS DO. </span><br/><span>AND WHAT OTHER TABLETS DON'T.</span></p>
+              <p class="content">It provides access to apps just like a smart phone or tablet. But it also projects brilliantly up to 10 ft. with 200 lumens of brilliance. It’s unlike anything you've ever touched or seen before. It fits in your hand but weighs a mere pound and a half of feathers. We call it the Spro2 Smart Projector.</p>
+              <div class="more">
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="description-responsive-mobile">
+          <section class="description-image">
+            <div class="description-container">
+              <div class="image-content center"><img src="./images/clone/screen-four-product-mobile.png"/></div>
+            </div>
+          </section>
+          <section class="description-content">
+            <div class="text-content center">
+              <p class="title"><span>WE DO WHAT TABLETS DO. </span><br/><span>AND WHAT OTHER TABLETS DON'T.</span></p>
+              <p class="content">It provides access to apps just like a smart phone or tablet. But it also projects brilliantly up to 10 ft. with 200 lumens of brilliance. It’s unlike anything you've ever touched or seen before. It fits in your hand but weighs a mere pound and a half of feathers. We call it the Spro2 Smart Projector.</p>
+              <div class="more">
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </section>
         </section>
         <section class="pitch">
           <div class="pitch-bg"></div>
@@ -132,16 +210,17 @@
           </div>
         </section>
         <section class="pitch-responsive">
-          <div class="pitch-container center">
-            <div class="text-content">
+          <section class="pitch-image"></section>
+          <section class="pitch-content">
+            <div class="text-content center">
               <p class="title">Executive Office. Suite</p>
               <p class="title">or Elevator Pitch. Perfect</p>
+              <p class="para">Your Big Idea just got bigger. And brighter. Now you can project an office doc, business presentation, or any Android app in 720p HD clarity. Access content via HDMI or USB ports, microSD slot or even in the cloud, and show sales projections to the C-Suite or pitch your start up idea to a busy investor riding the executive elevator.</p>
+              <div class="more">
+                <button class="btn btn-primary">Learn More</button>
+              </div>
             </div>
-            <p class="para">Your Big Idea just got bigger. And brighter. Now you can project an office doc, business presentation, or any Android app in 720p HD clarity. Access content via HDMI or USB ports, microSD slot or even in the cloud, and show sales projections to the C-Suite or pitch your start up idea to a busy investor riding the executive elevator.</p>
-            <div class="more">
-              <button class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
+          </section>
         </section>
         <section class="scenic">
           <div class="scenic-bg"></div>
@@ -155,8 +234,9 @@
             </div>
           </div>
         </section>
-        <section class="scenic-responsive-content">
-          <div class="scenic-container">
+        <section class="scenic-responsive">
+          <section class="scenic-image"></section>
+          <section class="scenic-content">
             <div class="text-content center">
               <p class="title">No Walls. Look</p>
               <p class="para">From the indoors to the outdoors, take a good look. Anywhere. With the Spro2 you can focus on what matters most. (Actually, there’s no need to focus. Our auto focus does the job for you.) And the built in rechargeable lithium ion battery will last for hours. So take a good long, long, long look.</p>
@@ -164,7 +244,7 @@
                 <button class="btn btn-primary">Learn More</button>
               </div>
             </div>
-          </div>
+          </section>
         </section>
         <section class="partners">
           <div class="partners-bg"></div>
@@ -180,7 +260,8 @@
           </div>
         </section>
         <section class="partners-responsive">
-          <div class="partners-container">
+          <section class="partners-image"></section>
+          <section class="partners-content">
             <div class="text-content center">
               <p class="title">Five inch screen or</p>
               <p class="title">Ten foot wall.</p>
@@ -189,7 +270,7 @@
                 <button class="btn btn-primary">Learn More</button>
               </div>
             </div>
-          </div>
+          </section>
         </section>
         <section class="apps-list">
           <div class="apps-list-bg"></div>
@@ -201,10 +282,41 @@
             <div class="image-content"><img src="./images/clone/apps.png"/></div>
           </div>
         </section>
+        <section class="apps-list-reponsive-mobile">
+          <section class="apps-list-container">
+            <div class="text-content center">
+              <h2>More apps than walls to show them on...</h2>
+              <p>The Spro2 is an Android-powered smart projector that streams content via Google Play apps. Wirelessly. Any media you could watch on your phone or tablet you can stream on the Spro2 and project it instantly.  Any Android app on any wall or surface. And with over 1.6 million apps available, you may need a bigger house.</p>
+            </div>
+          </section>
+          <section class="image-content"><img src="./images/clone/apps_mobile.png"/></section>
+        </section>
         <section class="testimonials">
           <div class="testimonials-container">
             <div class="testimonials-content center">
               <div class="image-container"><img src="./images/clone/android_ces.png"/></div>
+              <div class="text-content">
+                <p class="desc">"ZTE invented a new category with the Spro portable projector, and the Spro 2 improves upon it in every conceivable way."</p><a href="javascript:void(0)"><i>- Android Authority Top Pick of CES 2015</i></a>
+              </div>
+              <div class="selection">
+                <ul>
+                  <li><a href="javascript:void(0)">
+                      <div class="circle"></div></a></li>
+                  <li><a href="javascript:void(0)">
+                      <div class="circle selected"></div></a></li>
+                  <li><a href="javascript:void(0)">
+                      <div class="circle"></div></a></li>
+                  <li><a href="javascript:void(0)">
+                      <div class="circle"></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonials-responsive">
+          <div class="testimonials-container">
+            <div class="testimonials-content center">
+              <div class="image-container"><img src="./images/clone/award.png"/></div>
               <div class="text-content">
                 <p class="desc">"ZTE invented a new category with the Spro portable projector, and the Spro 2 improves upon it in every conceivable way."</p><a href="javascript:void(0)"><i>- Android Authority Top Pick of CES 2015</i></a>
               </div>
@@ -264,6 +376,21 @@
                 <li><img src="./images/clone/product-preview-three.png"/></li>
               </ul>
             </div>
+            <div class="right-nav">
+              <div class="arrow center-vertical"><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="product-responsive-mobile">
+          <div class="product-container">
+            <div class="left-nav">
+              <div class="arrow center-vertical"><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></div>
+            </div>
+            <div class="product-list center">
+              <ul>
+                <li><img src="./images/clone/product-preview-two.png"/></li>
+              </ul>
+            </div>
             <div class="bottom-nav center-horizontal">
               <ul>
                 <li><a href="javascrit:void(0)">
@@ -293,13 +420,21 @@
             </div>
           </div>
         </section>
-        <section class="purchase-responsive-image">
-          <div class="purchase-container">
-            <div class="image-content center"><img src="./images/clone/purchase_screen.png"/></div>
+        <section class="purchase-responsive">
+          <div class="purchase-container center">
+            <div class="image-content"><img src="./images/clone/purchase_screen.png"/></div>
+            <div class="text-content">
+              <p>You've just seen the future.</p>
+              <h2>Now you can own it!</h2>
+              <div class="more">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="purchase-responsive-content">
-          <div class="purchase-container center">
+        <section class="purchase-responsive-mobile">
+          <div class="purchase-container">
+            <div class="image-content"><img src="./images/clone/purchase_screen_mobile.png"/></div>
             <div class="text-content">
               <p>You've just seen the future.</p>
               <h2>Now you can own it!</h2>

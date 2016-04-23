@@ -276,9 +276,7 @@ section.intro-video .video-container .overlay .play{
   width: 136px;
   opacity: 1;
 }
-section.intro-video .video-container .overlay .play p{
 
-}
 section.intro-video .video-container .overlay .play a{
   font-size: 90px;
   font-weight: lighter;
@@ -850,19 +848,27 @@ footer .foot-hold{
 
 }
 
-.home-responsive,
-.description-responsive, 
-.description-responsive-image,
-.description-responsive-content,
-.pitch-responsive, .scenic-responsive-content,
-.partners-responsive,
-.purchase-responsive-image,
-.purchase-responsive-content,
-.responsive-nav,
-.view .text-responsive,
-.product-responsive{
-  display: none
-}
+section.home-responsive,
+section.intro-video-responsive,
+section.view-responsive,
+section.description-responsive,
+section.pitch-responsive,
+section.scenic-responsive,
+section.partners-responsive,
+section.testimonials-responsive,
+section.product-responsive,
+section.purchase-responsive,
+section.home-responsive-mobile,
+section.view-responsive-mobile,
+section.description-responsive-mobile,
+section.apps-list-reponsive-mobile,
+section.product-responsive-mobile,
+section.purchase-responsive-mobile,
+.responsive-nav{
+
+    display: none;
+
+  }
 
 
 .column-1, .column-2, .column-3, .column-4{
