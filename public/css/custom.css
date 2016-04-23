@@ -576,7 +576,7 @@ section.apps-list .apps-list-container .text-content p{
 }
 section.apps-list .apps-list-container .image-content img{
   bottom: 0;
-  height: 531px;
+  height: 475px;
   width: 100%;
   position: absolute;
 }
@@ -864,6 +864,7 @@ section.description-responsive-mobile,
 section.apps-list-reponsive-mobile,
 section.product-responsive-mobile,
 section.purchase-responsive-mobile,
+section.subscribe-responsive-mobile,
 .responsive-nav{
 
     display: none;

@@ -739,6 +739,7 @@ and (max-device-width: 414px){
   section.testimonials-responsive,
   section.product-responsive,
   section.purchase-responsive,
+  section.subscribe,
   
   .responsive-nav,
   section.home-responsive .tablet,
@@ -762,8 +763,9 @@ and (max-device-width: 414px){
   section.apps-list-responsive-mobile,
   section.testimonials-responsive,
   section.product-responsive-mobile,
-  section.subscribe,
-  section.purchase-responsive-mobile
+  section.subscribe-responsive-mobile,
+  section.purchase-responsive-mobile,
+  .responsive-nav
   {
     display: block !important;
   }
@@ -773,7 +775,13 @@ and (max-device-width: 414px){
     height: 285px;
   }
 
+  .responsive-nav {
+    font-size: 10vw;
+  }
 
+  header .logo{
+    margin-left: 10px !important;
+  }
 
   section.home-responsive-mobile .image-frame {
     height: 600px;
@@ -1208,27 +1216,27 @@ and (max-device-width: 414px){
     margin-top: 100px;
   }
 
-  section.subscribe {
+  section.subscribe-responsive-mobile {
     position: relative;
     height: 330px;
     background-color: #0069d2;
   }
-  section.subscribe .subscribe-container{
+  section.subscribe-responsive-mobile .subscribe-container{
       color: #fff;
       width: 100%;
   }
 
-  section.subscribe .subscribe-container .text-content{
+  section.subscribe-responsive-mobile .subscribe-container .text-content{
     width: 100%;
     text-align: center;
   }
-  section.subscribe .subscribe-container .text-content .para{
+  section.subscribe-responsive-mobile .subscribe-container .text-content .para{
     width: 75%;
     margin: 0 auto;
     padding-bottom: 30px;
   }
 
-  section.subscribe .subscribe-handle input[type=text]{
+  section.subscribe-responsive-mobile .subscribe-handle input[type=text]{
     border-radius: 22px;
     width: 100%;
     display: inline;
@@ -1236,14 +1244,14 @@ and (max-device-width: 414px){
     margin-bottom: 10px;
 
   }
-  section.subscribe .subscribe-container h2{
+  section.subscribe-responsive-mobile .subscribe-container h2{
 
     font-size: 20px;
   }
-  section.subscribe .subscribe-container p{
+  section.subscribe-responsive-mobile .subscribe-container p{
     font-size: 14px !important;
   }
-  .subscribe-handle{
+  section.subscribe-responsive-mobile .subscribe-handle{
 
     /*display: inline;*/
     width:80%;
@@ -1253,9 +1261,19 @@ and (max-device-width: 414px){
     left:50%;
     position: absolute;
   }
-  section.subscribe .subscribe-handle button{
+  section.subscribe-responsive-mobile .subscribe-handle button{
     top: 50px;
     margin-left:0;
+  }
+
+  section.subscribe-responsive-mobile .subscribe-handle button{
+    width: 160px;
+    display: inline;
+    
+    background-color: #1db0d6;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
   }
   footer {
 
