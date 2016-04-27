@@ -257,7 +257,7 @@ body {
 	}
 
 	section.detailed-description{
-		height: 1377px;
+		height: 1400px;
 		background-color: #fff;
 		position: relative;
 		.detailed-content-area {
@@ -280,77 +280,139 @@ body {
 					padding: 0 70px 0 35px;
 					a{
 						color: #333;
-					}
-					a:hover{
 						text-decoration: none;
 					}
+					a:hover,a:visited, a:active{
+						text-decoration: none;
+					}
+
+
 				}
 				ul li.selected{
 					border-bottom: 3px solid $blue-color;
+
 				}
 
 			}
-			.content-section {
-				margin-top: 50px;
-				font-family: $Roboto;
-				font-weight: normal;
-				.title{
+			.support{
+				display: none;
+				.content-section {
+					margin-top: 50px;
+					font-family: $Roboto;
+					font-weight: normal;
+					.title{
+
+					}
+					.manuals {
+						margin: 48px 0 77px 48px;
+						color: #a8abae;
+						.manuals-list{
+							margin-bottom: 44px;
+						}
+						button.custom{
+							margin-top: 17px;
+							height: 40px;
+							width: 160px;
+							font-size: 16px;
+							background-color: $blue-color;
+						}
+					}
+					.contact {
+						.contact-form{
+							margin: 48px 0 77px 48px;
+							.contact-form-section{
+								margin-top: 34px;
+								form {
+									.field.extended{
+											height: 150px;
+											margin: 0;
+									}
+									.field{
+										height: 50px;
+										margin-bottom: 25px;
+										.title {
+											color: $gray;
+											padding: 5px 0 5px 0;
+										}
+										input{
+											height: 29px;
+										}
+									}
+								}
+								.form-element {
+									width: 287px;
+								}
+								textarea.form-element{
+									resize: none;
+									height: 122px;
+								}
+								button.custom{
+									background: $blue-color;
+									width: 158px;
+									height: 42px;
+									margin-top: 30px;
+									font-size: 16px;
+									font-weight: lighter;
+								}
+							}
+						}
+
+					}
+				}
+			}
+
+			.about{
+				.text-container{
+					margin: 58px 0 0 50px;
+				}
+				p{
 
 				}
-				.manuals {
-					margin: 48px 0 77px 48px;
-					color: #a8abae;
-					.manuals-list{
-						margin-bottom: 44px;
-					}
-					button.custom{
-						margin-top: 17px;
-						height: 40px;
-						width: 160px;
-						font-size: 16px;
-						background-color: $blue-color;
+			}
+			.dimensions{
+				display: none;
+				height: 395px;
+				margin-top: 100px;
+				.dimension-view-left, .dimension-view-right{
+					width: 50%;
+					float: left;
+					height: 100%;
+
+				}
+				.dimension-view-left {
+
+				}
+				.dimension-view-right{
+					img{
+						position: absolute;
+						bottom: 38px;
 					}
 				}
-				.contact {
-					.contact-form{
-						margin: 48px 0 77px 48px;
-						.contact-form-section{
-							margin-top: 34px;
-							form {
-								.field.extended{
-										height: 150px;
-										margin: 0;
-								}
-								.field{
-									height: 50px;
-									margin-bottom: 25px;
-									.title {
-										color: $gray;
-										padding: 5px 0 5px 0;
-									}
-									input{
-										height: 29px;
-									}
+
+
+			}
+			.specs{
+				display: none;
+				.list-container{
+					ul.spec-list{
+						margin: 58px 0 0 50px;
+						li {
+							height: 40px;
+							.key,.value{
+								float: left;
+							}
+							.key{
+								width: 40%;
+								.title{
+									font-size: 15px;
+									font-weight: 700;
 								}
 							}
-							.form-element {
-								width: 287px;
-							}
-							textarea.form-element{
-								resize: none;
-								height: 122px;
-							}
-							button.custom{
-								background: $blue-color;
-								width: 158px;
-								height: 42px;
-								margin-top: 30px;
-								font-size: 16px;
-								font-weight: lighter;
+							.value{
+								width: 60%;
 							}
 						}
 					}
-
 				}
 			}
 		}

@@ -204,7 +204,7 @@ body section.product-description .inner-container .product-details-container .so
   text-decoration: none;
 }
 body section.detailed-description {
-  height: 1377px;
+  height: 1400px;
   background-color: #fff;
   position: relative;
 }
@@ -228,67 +228,110 @@ body section.detailed-description .detailed-content-area .menu-section ul li {
 }
 body section.detailed-description .detailed-content-area .menu-section ul li a {
   color: #333;
+  text-decoration: none;
 }
-body section.detailed-description .detailed-content-area .menu-section ul li a:hover {
+body section.detailed-description .detailed-content-area .menu-section ul li a:hover, body section.detailed-description .detailed-content-area .menu-section ul li a:visited, body section.detailed-description .detailed-content-area .menu-section ul li a:active {
   text-decoration: none;
 }
 body section.detailed-description .detailed-content-area .menu-section ul li.selected {
   border-bottom: 3px solid #009cff;
 }
-body section.detailed-description .detailed-content-area .content-section {
+body section.detailed-description .detailed-content-area .support {
+  display: none;
+}
+body section.detailed-description .detailed-content-area .support .content-section {
   margin-top: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
-body section.detailed-description .detailed-content-area .content-section .manuals {
+body section.detailed-description .detailed-content-area .support .content-section .manuals {
   margin: 48px 0 77px 48px;
   color: #a8abae;
 }
-body section.detailed-description .detailed-content-area .content-section .manuals .manuals-list {
+body section.detailed-description .detailed-content-area .support .content-section .manuals .manuals-list {
   margin-bottom: 44px;
 }
-body section.detailed-description .detailed-content-area .content-section .manuals button.custom {
+body section.detailed-description .detailed-content-area .support .content-section .manuals button.custom {
   margin-top: 17px;
   height: 40px;
   width: 160px;
   font-size: 16px;
   background-color: #009cff;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form {
   margin: 48px 0 77px 48px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section {
   margin-top: 34px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field.extended {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section form .field.extended {
   height: 150px;
   margin: 0;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section form .field {
   height: 50px;
   margin-bottom: 25px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field .title {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section form .field .title {
   color: #c6c5c6;
   padding: 5px 0 5px 0;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field input {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section form .field input {
   height: 29px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section .form-element {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section .form-element {
   width: 287px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section textarea.form-element {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section textarea.form-element {
   resize: none;
   height: 122px;
 }
-body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section button.custom {
+body section.detailed-description .detailed-content-area .support .content-section .contact .contact-form .contact-form-section button.custom {
   background: #009cff;
   width: 158px;
   height: 42px;
   margin-top: 30px;
   font-size: 16px;
   font-weight: lighter;
+}
+body section.detailed-description .detailed-content-area .about .text-container {
+  margin: 58px 0 0 50px;
+}
+body section.detailed-description .detailed-content-area .dimensions {
+  display: none;
+  height: 395px;
+  margin-top: 100px;
+}
+body section.detailed-description .detailed-content-area .dimensions .dimension-view-left, body section.detailed-description .detailed-content-area .dimensions .dimension-view-right {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+body section.detailed-description .detailed-content-area .dimensions .dimension-view-right img {
+  position: absolute;
+  bottom: 38px;
+}
+body section.detailed-description .detailed-content-area .specs {
+  display: none;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list {
+  margin: 58px 0 0 50px;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li {
+  height: 40px;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li .key, body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li .value {
+  float: left;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li .key {
+  width: 40%;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li .key .title {
+  font-size: 15px;
+  font-weight: 700;
+}
+body section.detailed-description .detailed-content-area .specs .list-container ul.spec-list li .value {
+  width: 60%;
 }
 body section.store-locations {
   height: 522px;
