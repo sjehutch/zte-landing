@@ -1,0 +1,321 @@
+html(lang)
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", type="text/css", href="./lib/bootstrap/dist/css/bootstrap.css")
+		link(rel="stylesheet", type="text/css", href="./lib/font-awesome/css/font-awesome.css")
+		link(rel="stylesheet", type="text/css", href="./css/product.css")
+		title ZTE
+	body
+		header.fixed
+			nav
+				.navbar.navbar-default.navbar-on-scroll#nav-on-scroll(role="navigation")
+					.container-fluid
+						.navbar-header(style="position:relative")
+							button.colapse-menu.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							.navbar-logo
+								a.navbar-brand(href="javascript:void(0)")
+									.logo.center-vertical
+							.collapse.navbar-collapse#navbar
+								ul.nav.navbar-nav.navbar-right
+									li
+										a(href="#") AXON
+									li
+										a(href="#") SPRO
+									li
+										a(href="#") PRODUCTS
+									li
+										a(href="#") SUPPORT
+									li
+										a(href="#") ABOUT US
+									li
+										a(href="javascript:void(0)")
+											i.fa.fa-search
+		section.product-description
+			.inner-container.center
+				.product-display-container
+					.product-image
+						img(src="./images/product/productScreen.png")
+					.product-slider
+						.left-nav
+							a(href="#")
+								span.center
+									i.fa.fa-angle-left
+						.inner-slider-1
+							img.center(src="./images/product/slider1.png")
+						.inner-slider-2
+							img.center(src="./images/product/slider2.png")
+						.inner-slider-3
+							img.center(src="./images/product/slider3.png")
+						.right-nav
+							a(href="#")
+								span.center
+									i.fa.fa-angle-right
+					
+				.product-details-container
+					.title
+						.product-name
+						.product-margin
+						.product-partner
+					.price-details
+						.price
+							span.strike-through $599.99
+							span.new-value $549.99
+					.other-details
+						.availability
+							p Available
+						.shipping-details
+							.status
+								p Free Standard Shipping
+							.product-code
+								p SKU: MF97V
+								
+						.description
+							p The ZTE Spro™ 2 Smart Projector is a 2-in-1 projector and mobile hotspot that lets you access the content you want and view it in style, virtually anywhere you choose.
+						
+					.social-tab
+						a(href="#").whishlist
+							span
+								i.fa.fa-heart
+							span.text Wishlist
+						a(href="#").compare
+							span
+								i.fa.fa-shopping-cart
+							span.text Compare
+						a(href="#").share
+							span
+								i.fa.fa-envelope
+							span.text Share
+							
+		section.detailed-description
+			.detailed-content-area.center-horizontal
+				.support#support
+					.menu-section
+						ul.menu-bar
+							li.selected
+								a(href="#")
+									h3 About
+							li
+								a(href="#")
+									h3 Dimensions
+							li
+								a(href="#")
+									h3 Specs
+							li
+								a(href="#")
+									h3 Support
+					.content-section
+						.title
+							h3 Manuals
+						.manuals
+							.manuals-list
+								p
+									span ZTE Spro 2 User Manual
+									br
+									span (English - PDF 783kb)
+								button.btn.btn-primary.custom Download
+							.manuals-list
+								p
+									span ZTE Spro 2 WiFi Bluetooth Remote Control User Guide
+									br
+									span (English - PDF 228kb)
+								button.btn.btn-primary.custom Download
+						.contact
+							.title
+								h3 Contact
+							.contact-form
+								.contact-title
+									p If you have questions about how to use ZTE mobile devices or your device needs repair services, please contact our services hotline or email for more information.
+									p.blue-color-text Service Hotline: 877-817-1759
+									p.blue-color-text Hotline Hours: Monday-Sunday 8Am - 9Pm (Cst)
+								.contact-form-section
+									h5.blue-color-text Email Us
+									form
+										.field
+											div.title Your Name
+											input.form-control.form-element(type="input")
+										.field
+											div.title Your Email
+											input.form-control.form-element(type="input")
+										.field
+											div.title Subject
+											input.form-control.form-element(type="input")
+										.field.extended
+											div.title Comments
+											textarea.form-control.form-element
+										.submit
+											button.btn.btn-primary.custom Submit
+										
+		
+		section.store-locations
+			.search-section
+				.heading
+					.heading-holder
+						div.center-vertical Find a Store Near You
+				.search-form
+					form
+						.item
+							div.label-custom
+								| Zip Code
+							input.form-control(type="text")
+						.item
+							div.label-custom
+								| Select Radius
+							.custom-select
+								.sudo-select
+									.selected-text
+										span.center 15 Miles
+									.pull-down
+										span.fa.fa-angle-down.center-vertical		
+								select.form-control(type="text")
+						.item-search
+							button.btn.btn-primary.custom.center-vertical Search
+			.map-section
+				.map-area#map-area
+				.area
+					ul.area-list
+						li
+							.location-container
+								.pointer
+									img(src="./images/product/drop.png")
+								.description
+									h5 Brookstone
+									p Shop U24, Eastgate Shopping Centre, GP
+									p +27 11 622 1663
+									.footer-section
+										.street-view
+											a(href="#")
+												| Street View
+										.direction
+											a(href="#")
+												| Direction
+						li
+							.location-container
+								.pointer
+									img(src="./images/product/drop.png")
+								.description
+									h5 Brookstone
+									p Shop U24, Eastgate Shopping Centre, GP
+									p +27 11 622 1663
+									.footer-section
+										.street-view
+											a(href="#")
+												| Street View
+										.direction
+											a(href="#")
+												| Direction
+
+						li
+							.location-container
+								.pointer
+									img(src="./images/product/drop.png")
+								.description
+									h5 Brookstone
+									p Shop U24, Eastgate Shopping Centre, GP
+									p +27 11 622 1663
+									.footer-section
+										.street-view
+											a(href="#")
+												| Street View
+										.direction
+											a(href="#")
+												| Direction
+
+
+		section.subscribe
+			.subscribe-container.center
+				.text-content
+					h2 Subscribe To Our Newsletter
+					p.para Subscribe to our newsletter to receive news & updates. We promise to not spam you super promise!
+					.subscribe-handle
+						input.form-control(type="text", placeholder="Input Your Email")
+						button.btn.btn-primary.pull-left.custom Subscribe	
+		
+		footer
+			.footer-container
+				div.row-fluid.center.foot-hold
+					.column-1
+						.content-container
+							p.copyright
+								span © 2016  ZTE Corporation and
+								br
+								span ZTE USA. All Rights Reserved
+								.icons
+									.circle
+										span.fa.fa-facebook
+									.circle
+										span.fa.fa-twitter
+									.circle
+										span.fa.fa-google-plus
+									.circle
+										span.fa.fa-pinterest
+									.circle
+										span.fa.fa-amazon
+									.circle
+										span.fa.fa-vimeo
+									.circle
+										span.fa.fa-apple
+									.circle
+										span.fa.fa-youtube
+									.circle
+										span.fa.fa-instagram
+					.column-2.border
+						h5 PRODUCTS
+						ul
+							li 
+								a(href="javascript:void(0)") Smartphone
+							li 
+								a(href="javascript:void(0)") Feature Phone
+							li 
+								a(href="javascript:void(0)") Smart Projectors
+							li 
+								a(href="javascript:void(0)") Accessories
+							li 
+								a(href="javascript:void(0)") Mobile Broadband
+							li 
+								a(href="javascript:void(0)") Tablets
+							li 
+								a(href="javascript:void(0)") M2M/IoT
+					
+					.column-3.border
+						h5 FIND HELP
+						ul
+							li 
+								a(href="javascript:void(0)") Find Product Support
+							li 
+								a(href="javascript:void(0)") Register Your Product
+							li 
+								a(href="javascript:void(0)") Contact Us
+							li 
+								a(href="javascript:void(0)") Site Map
+							li 
+								a(href="javascript:void(0)") Repair Service
+							li 
+								a(href="javascript:void(0)") Warranties
+							li 
+								a(href="javascript:void(0)") Track Your Orders
+					.column-4.border
+						h5 ABOUT ZTE
+						ul
+							li 
+								a(href="javascript:void(0)") About Us
+							li 
+								a(href="javascript:void(0)") Innovation Venture Fund
+							li 
+								a(href="javascript:void(0)") News
+							li 
+								a(href="javascript:void(0)") Careers
+							li 
+								a(href="javascript:void(0)") ZTE Global
+							li 
+								a(href="javascript:void(0)") ZTE Device Global
+							li 
+								a(href="javascript:void(0)") ZTE Enterprise Global
+
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW3PCrsp3j_Qrs7N9LeEsVhttyFZp9WHM&callback=initMap",async,defer)
+		script(src="./lib/jquery/dist/jquery.js")
+		script(src="./lib/bootstrap/dist/js/bootstrap.js")
+		script(src="./js/zte-products.js")

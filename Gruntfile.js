@@ -19,10 +19,25 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+
+        },
+        files: [{
+          expand: true,
+          cwd: "app/sass",
+          dest: "public/css",
+          src: "*.scss",
+          ext: ".css"
+        }]
+      }
+    },
     watch: {
       jade: {
-        files: ["app/*.jade"],
-        tasks: ["jade"],
+        files: ["app/*.jade", "app/sass/*.scss"],
+        tasks: ["jade", "sass"],
         options: {
           livereload: true
         }
@@ -33,9 +48,10 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-jade')
+  grunt.loadNpmTasks('grunt-contrib-sass')
   grunt.loadNpmTasks('grunt-contrib-watch')
 
   // Default task(s).
-  grunt.registerTask('default', ['jade', 'watch']);
+  grunt.registerTask('default', ['jade','sass','watch']);
 
 };

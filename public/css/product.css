@@ -1,0 +1,489 @@
+/*Zte-app custom css*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Dosis:500,400);
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, section.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.center-vertical {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+}
+
+.center-horizontal {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.center {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #f9f9f9;
+}
+body .blue-color-text {
+  color: #009cff;
+}
+body button.btn.custom {
+  background-color: #1db0d6;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+}
+body header {
+  font-family: "Dosis", sans-serif;
+}
+body header .navbar-header, body header .navbar {
+  width: 100%;
+}
+body header .logo {
+  background-image: url("../images/clone/logo.png");
+  background-repeat: no-repeat;
+  background-size: 77px;
+  margin-left: 56px !important;
+  width: 105px;
+  height: 45px;
+}
+body header .navbar-default {
+  background: #f9f9f9;
+  border: 0;
+}
+body header .navbar-default .navbar-toggle:hover, body header .navbar-default .navbar-toggle:focus {
+  background: none;
+}
+body header .navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+body header .nav.navbar-nav.navbar-right {
+  margin-top: 1%;
+  margin-right: 1%;
+}
+body header .nav.navbar-nav a .fa {
+  color: #3a93d6;
+}
+body section.product-description {
+  width: 100%;
+  height: 701px;
+  margin-top: 40px;
+  position: relative;
+}
+body section.product-description .inner-container {
+  width: 810px;
+  height: 460px;
+}
+body section.product-description .inner-container .product-display-container, body section.product-description .inner-container .product-details-container {
+  width: 50%;
+  display: inline-block;
+  height: 460px;
+}
+body section.product-description .inner-container .product-display-container {
+  float: left;
+  background: #f9f9f9;
+}
+body section.product-description .inner-container .product-display-container .product-slider {
+  height: 53px;
+  width: 100%;
+  border: 1px solid #c6c5c6;
+  display: inline-flex;
+}
+body section.product-description .inner-container .product-display-container .product-slider .left-nav, body section.product-description .inner-container .product-display-container .product-slider .right-nav {
+  width: 10%;
+  position: relative;
+}
+body section.product-description .inner-container .product-display-container .product-slider .left-nav a, body section.product-description .inner-container .product-display-container .product-slider .right-nav a {
+  color: #c6c5c6;
+}
+body section.product-description .inner-container .product-display-container .product-slider .left-nav .fa, body section.product-description .inner-container .product-display-container .product-slider .right-nav .fa {
+  font-size: 22px;
+}
+body section.product-description .inner-container .product-display-container .product-slider .left-nav, body section.product-description .inner-container .product-display-container .product-slider div[class^="inner-slider-"] {
+  border-right: 1px solid #c6c5c6;
+}
+body section.product-description .inner-container .product-display-container .product-slider div[class^="inner-slider-"] {
+  width: 26.6%;
+  position: relative;
+}
+body section.product-description .inner-container .product-details-container {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  padding: 50px 0 0 50px;
+}
+body section.product-description .inner-container .product-details-container .title {
+  width: 100%;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+body section.product-description .inner-container .product-details-container .title .product-name {
+  background: url("../images/product/productName.png");
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 175px;
+}
+body section.product-description .inner-container .product-details-container .title .product-margin {
+  height: 37px;
+  width: 1px;
+  margin: 0 20px 0 20px;
+  background-color: #c6c5c5;
+}
+body section.product-description .inner-container .product-details-container .title .product-partner {
+  background: url("../images/product/verizon_transparent.png");
+  height: 42px;
+  width: 75px;
+}
+body section.product-description .inner-container .product-details-container .price-details {
+  width: 100%;
+}
+body section.product-description .inner-container .product-details-container .price-details .price {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #c6c5c6;
+  font-size: 18px;
+}
+body section.product-description .inner-container .product-details-container .price-details .price span.strike-through {
+  text-decoration: line-through;
+}
+body section.product-description .inner-container .product-details-container .price-details .price span {
+  margin-right: 20px;
+}
+body section.product-description .inner-container .product-details-container .price-details .price span.new-value {
+  font-size: 20px;
+  color: #009cff;
+}
+body section.product-description .inner-container .product-details-container .other-details {
+  padding-top: 15px;
+}
+body section.product-description .inner-container .product-details-container .other-details .availability {
+  color: #c6c5c6;
+}
+body section.product-description .inner-container .product-details-container .other-details .shipping-details .product-code {
+  width: 50%;
+}
+body section.product-description .inner-container .product-details-container .other-details .shipping-details {
+  margin: 10px 0 25px 0;
+  width: 100%;
+  display: inline-flex;
+}
+body section.product-description .inner-container .product-details-container .other-details .shipping-details .product-code p {
+  float: right;
+}
+body section.product-description .inner-container .product-details-container .other-details .description {
+  margin-bottom: 30px;
+}
+body section.product-description .inner-container .product-details-container .social-tab a {
+  margin-right: 40px;
+  color: #009cff;
+}
+body section.product-description .inner-container .product-details-container .social-tab a span.text {
+  margin-left: 10px;
+  color: #333;
+}
+body section.product-description .inner-container .product-details-container .social-tab a .fa {
+  font-size: 20px;
+}
+body section.product-description .inner-container .product-details-container .social-tab a:hover {
+  text-decoration: none;
+}
+body section.detailed-description {
+  height: 1377px;
+  background-color: #fff;
+  position: relative;
+}
+body section.detailed-description .detailed-content-area {
+  width: 832px;
+  margin-top: 80px;
+}
+body section.detailed-description .detailed-content-area .menu-section {
+  height: 80px;
+  border-bottom: 1px solid #c6c5c6;
+}
+body section.detailed-description .detailed-content-area .menu-section ul {
+  display: inline;
+  font-family: sans-serif;
+  width: 100%;
+}
+body section.detailed-description .detailed-content-area .menu-section ul li {
+  float: left;
+  height: 79px;
+  padding: 0 70px 0 35px;
+}
+body section.detailed-description .detailed-content-area .menu-section ul li a {
+  color: #333;
+}
+body section.detailed-description .detailed-content-area .menu-section ul li a:hover {
+  text-decoration: none;
+}
+body section.detailed-description .detailed-content-area .menu-section ul li.selected {
+  border-bottom: 3px solid #009cff;
+}
+body section.detailed-description .detailed-content-area .content-section {
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+body section.detailed-description .detailed-content-area .content-section .manuals {
+  margin: 48px 0 77px 48px;
+  color: #a8abae;
+}
+body section.detailed-description .detailed-content-area .content-section .manuals .manuals-list {
+  margin-bottom: 44px;
+}
+body section.detailed-description .detailed-content-area .content-section .manuals button.custom {
+  margin-top: 17px;
+  height: 40px;
+  width: 160px;
+  font-size: 16px;
+  background-color: #009cff;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form {
+  margin: 48px 0 77px 48px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section {
+  margin-top: 34px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field.extended {
+  height: 150px;
+  margin: 0;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field {
+  height: 50px;
+  margin-bottom: 25px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field .title {
+  color: #c6c5c6;
+  padding: 5px 0 5px 0;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section form .field input {
+  height: 29px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section .form-element {
+  width: 287px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section textarea.form-element {
+  resize: none;
+  height: 122px;
+}
+body section.detailed-description .detailed-content-area .content-section .contact .contact-form .contact-form-section button.custom {
+  background: #009cff;
+  width: 158px;
+  height: 42px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+body section.store-locations {
+  height: 522px;
+}
+body section.store-locations .search-section {
+  height: 98px;
+  background-color: #29313c;
+}
+body section.store-locations .search-section .heading, body section.store-locations .search-section .search-form {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+body section.store-locations .search-section .heading {
+  font-size: 25px;
+  color: #fff;
+  border-right: 1px solid #c6c5c6;
+}
+body section.store-locations .search-section .heading .heading-holder {
+  width: 316px;
+  position: relative;
+  float: right;
+  height: 100%;
+}
+body section.store-locations .search-section .heading .heading-holder > div {
+  text-align: center;
+}
+body section.store-locations .search-section .search-form {
+  background-color: #28282e;
+  padding: 20px;
+  color: #fff;
+}
+body section.store-locations .search-section .search-form form .item, body section.store-locations .search-section .search-form form .item-search {
+  height: 55px;
+  float: left;
+  margin-right: 14px;
+}
+body section.store-locations .search-section .search-form form .item select, body section.store-locations .search-section .search-form form .item-search select {
+  display: none;
+}
+body section.store-locations .search-section .search-form form .item input, body section.store-locations .search-section .search-form form .item select, body section.store-locations .search-section .search-form form .item-search input, body section.store-locations .search-section .search-form form .item-search select {
+  width: 135px;
+  border-radius: 22px;
+  height: 26px;
+}
+body section.store-locations .search-section .search-form form .item button.custom, body section.store-locations .search-section .search-form form .item-search button.custom {
+  width: 95px;
+  background: #009cff;
+}
+body section.store-locations .search-section .search-form form .item .sudo-select, body section.store-locations .search-section .search-form form .item-search .sudo-select {
+  width: 135px;
+  border-radius: 22px;
+  height: 26px;
+  background: #fff;
+  display: table;
+  color: #c6c5c6;
+  cursor: pointer;
+}
+body section.store-locations .search-section .search-form form .item .sudo-select .selected-text, body section.store-locations .search-section .search-form form .item-search .sudo-select .selected-text {
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  position: relative;
+}
+body section.store-locations .search-section .search-form form .item .sudo-select .pull-down, body section.store-locations .search-section .search-form form .item-search .sudo-select .pull-down {
+  position: relative;
+  height: 100%;
+}
+body section.store-locations .search-section .search-form form .item .sudo-select .selected-text, body section.store-locations .search-section .search-form form .item .sudo-select span.fa, body section.store-locations .search-section .search-form form .item-search .sudo-select .selected-text, body section.store-locations .search-section .search-form form .item-search .sudo-select span.fa {
+  float: left;
+}
+body section.store-locations .search-section .search-form form .item .sudo-select span.fa, body section.store-locations .search-section .search-form form .item-search .sudo-select span.fa {
+  width: 20%;
+  font-size: 18px;
+  font-weight: 800;
+  color: #29313c;
+}
+body section.store-locations .search-section .search-form form .item .label-custom, body section.store-locations .search-section .search-form form .item-search .label-custom {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+body section.store-locations .search-section .search-form form .item-search {
+  position: relative;
+  height: 70px;
+}
+body section.store-locations .map-section {
+  height: 424px;
+}
+body section.store-locations .map-section .map-area, body section.store-locations .map-section .area {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+body section.store-locations .map-section .area {
+  background: #fff;
+  padding: 40px 0 0 45px;
+}
+body section.store-locations .map-section .area .area-list {
+  font-size: 11.37px;
+}
+body section.store-locations .map-section .area .area-list li {
+  border-bottom: 1px solid #e7e7e5;
+  width: 80%;
+}
+body section.store-locations .map-section .area .area-list .location-container {
+  height: 115px;
+}
+body section.store-locations .map-section .area .area-list .location-container .pointer, body section.store-locations .map-section .area .area-list .location-container .description {
+  float: left;
+}
+body section.store-locations .map-section .area .area-list .location-container .pointer {
+  width: 15%;
+  margin-top: 25px;
+  position: relative;
+}
+body section.store-locations .map-section .area .area-list .location-container .description {
+  width: 85%;
+}
+body section.store-locations .map-section .area .area-list .location-container .description .footer-section {
+  width: 53%;
+}
+body section.store-locations .map-section .area .area-list .location-container .description .footer-section .street-view, body section.store-locations .map-section .area .area-list .location-container .description .footer-section .direction {
+  display: inline;
+}
+body section.store-locations .map-section .area .area-list .location-container .description .footer-section .direction {
+  float: right;
+}
+body section.subscribe {
+  width: 100%;
+  height: 335px;
+  background-color: #0069d2;
+  position: relative;
+  color: #fff;
+}
+body section.subscribe .subscribe-container .text-content .para {
+  width: 314px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 12px;
+}
+body section.subscribe .subscribe-container .subscribe-handle input[type=text] {
+  border-radius: 22px;
+  width: 300px;
+  display: inline;
+  float: left;
+}
+body section.subscribe .subscribe-container .subscribe-handle button.custom {
+  width: 160px;
+  display: inline;
+  margin-left: 20px;
+}
+body footer .column-1, body footer .column-2, body footer .column-3, body footer .column-4 {
+  width: 25%;
+  float: left;
+  padding: 5px;
+}
+body footer .border {
+  border-left: 2px solid #636367;
+  min-height: 163px;
+  padding-left: 35px;
+}
+body footer .footer-container {
+  height: 276px;
+  background: #28282e;
+  position: relative;
+  color: #636367;
+}
+body footer .footer-container a {
+  color: #B1B1B1;
+}
+body footer .footer-container a:hover {
+  text-decoration: none;
+}
+body footer .footer-container .icons {
+  text-align: center;
+  width: 150px;
+}
+body footer .footer-container .icons .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 22px;
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 6px;
+  display: inline-block;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+body footer .content-container {
+  width: 930px;
+  bottom: 50px;
+}
+
+/*# sourceMappingURL=product.css.map */
